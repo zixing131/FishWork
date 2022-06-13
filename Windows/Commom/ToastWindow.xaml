@@ -1,0 +1,21 @@
+﻿<Window x:Class="FishWork.Windows.Commom.ToastWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FishWork.Windows.Commom"
+        mc:Ignorable="d"
+        Title="ToastWindow" Height="81.038" Width="1047.881"
+        ShowInTaskbar="False"
+        Topmost="True"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        >
+    <Grid>
+        <Border Name="border" Background="#64000000" Padding="50,10,50,10" CornerRadius="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Name="lbText" TextWrapping="Wrap" Foreground="#FFFFFF" TextAlignment="Center" VerticalAlignment="Center" FontSize="17">1214555555523232555544</TextBlock>
+        </Border>
+    </Grid>
+   
+</Window>

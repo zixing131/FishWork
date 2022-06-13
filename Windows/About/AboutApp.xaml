@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="FishWork.Windows.About.AboutApp"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FishWork.Windows.About"
+             mc:Ignorable="d" 
+             d:DesignHeight="426.165" d:DesignWidth="429.131"
+             Background="White"
+             Loaded="UserControl_Loaded"
+             >
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <TextBlock FontSize="20" Margin="0,20,0,0">WorkTools - 摸鱼大师</TextBlock>
+            <TextBlock Name="lbVersion" TextAlignment="Center" Margin="0,10,0,0">软件版本号 -</TextBlock>
+            <TextBlock TextAlignment="Center" Margin="0,10,0,0">开发者 Enki</TextBlock>
+            <TextBlock TextAlignment="Center" Margin="0,10,0,0">QQ群 764760782</TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

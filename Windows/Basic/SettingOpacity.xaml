@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="FishWork.Windows.Basic.SettingOpacity"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FishWork.Windows.Basic"
+             mc:Ignorable="d" 
+             d:DesignHeight="315.095" d:DesignWidth="334.905"
+             Background="White"
+             Loaded="UserControl_Loaded"
+             >
+    <Grid>
+        <StackPanel>
+            <StackPanel Margin="15,10,0,0" >
+                <TextBlock Name="lb1">透明度1 - 10%</TextBlock>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#666666">1%</TextBlock>
+                    <Slider Name="slider1" ValueChanged="slider1_ValueChanged" Minimum="1" Maximum="100" VerticalAlignment="Center" Width="180" Template="{StaticResource SliderControlTemplate1}"></Slider>
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#666666">100%</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="15,10,0,0" >
+                <TextBlock Name="lb2">透明度2</TextBlock>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#666666">1%</TextBlock>
+                    <Slider Name="slider2" ValueChanged="slider2_ValueChanged" Minimum="1" Maximum="100" VerticalAlignment="Center" Width="180" Template="{StaticResource SliderControlTemplate1}"></Slider>
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#666666">100%</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="15,10,0,0" >
+                <TextBlock Name="lb3">透明度3</TextBlock>
+                <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#666666">1%</TextBlock>
+                    <Slider Name="slider3" ValueChanged="slider3_ValueChanged"  Minimum="1" Maximum="100" VerticalAlignment="Center" Width="180" Template="{StaticResource SliderControlTemplate1}"></Slider>
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#666666">100%</TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

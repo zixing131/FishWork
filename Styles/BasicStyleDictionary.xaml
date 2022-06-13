@@ -1,0 +1,95 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--背景高亮Style-->
+    <Style x:Key="m_back_high">
+        <Style.Triggers>
+            <Trigger Property="Control.IsMouseOver" Value="True">
+                <Setter Property="Control.Background" Value="#32FFFFFF"></Setter>
+                <Setter Property="Control.Cursor" Value="Hand"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--背景高亮Style-->
+    <Style x:Key="m_back_high_b">
+        <Style.Triggers>
+            <Trigger Property="Control.IsMouseOver" Value="True">
+                <Setter Property="Control.Background" Value="#32000000"></Setter>
+                <Setter Property="Control.Cursor" Value="Hand"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--前景加深Style-->
+    <Style x:Key="m_fore_deep">
+        <Style.Triggers>
+            <Trigger Property="Control.IsMouseOver" Value="True">
+                <Setter Property="Control.Foreground" Value="#636363"></Setter>
+                <Setter Property="Control.Cursor" Value="Hand"></Setter>
+            </Trigger>
+            <Trigger Property="Control.IsMouseOver" Value="False">
+                <Setter Property="Control.Foreground" Value="#AFB1B7"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--背景高亮-->
+    <Style x:Key="m_item_hover">
+        <Style.Triggers>
+            <Trigger Property="Control.IsMouseOver" Value="True">
+                <Setter Property="Control.Background" Value="#5D86C5"></Setter>
+                <Setter Property="Control.Foreground" Value="White"></Setter>
+                <Setter Property="Control.Cursor" Value="Hand"></Setter>
+            </Trigger>
+            <Trigger Property="Control.IsMouseOver" Value="False">
+                <Setter Property="Control.Background" Value="Transparent"></Setter>
+                <Setter Property="Control.Foreground" Value="Black"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--元素透明度高亮-->
+    <Style x:Key="m_elem_focus">
+        <Style.Triggers>
+            <Trigger Property="Control.IsMouseOver" Value="True">
+                <Setter Property="Control.Opacity" Value="0.7"></Setter>
+                <Setter Property="Control.Cursor" Value="Hand"></Setter>
+            </Trigger>
+            <Trigger Property="Control.IsMouseOver" Value="False">
+                <Setter Property="Control.Opacity" Value="1"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--主页功能按钮-->
+    <Style x:Key="FontAwesome">
+        <Setter Property="TextElement.FontFamily" Value="pack://application:,,,/#FontAwesome" />
+        <Setter Property="TextBlock.TextAlignment" Value="Center"></Setter>
+        <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+    </Style>
+    <!--字体图标-->
+    <Style x:Key="m_icon" BasedOn="{StaticResource FontAwesome}">
+        <Style.Triggers>
+            <Trigger Property="Control.IsMouseOver" Value="True">
+                <Setter Property="Control.Background" Value="#32FFFFFF"></Setter>
+                <Setter Property="Control.Cursor" Value="Hand"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <!--边框-->
+    <Style x:Key="border_bottom" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#ECECEC"/>
+        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+    </Style>
+
+    <ImageBrush x:Key="skin_01_temp" ImageSource="../Skin/01/sm.jpg"></ImageBrush>
+    <ImageBrush x:Key="skin_02_temp" ImageSource="../Skin/02/sm.png"></ImageBrush>
+    <ImageBrush x:Key="skin_03_temp" ImageSource="../Skin/03/sm.png"></ImageBrush>
+    <ImageBrush x:Key="skin_04_temp" ImageSource="../Skin/04/sm.png"></ImageBrush>
+    <ImageBrush x:Key="skin_05_temp" ImageSource="../Skin/05/sm.png"></ImageBrush>
+    <ImageBrush x:Key="skin_06_temp" ImageSource="../Skin/06/sm.png"></ImageBrush>
+    <ImageBrush x:Key="skin_07_temp" ImageSource="../Skin/07/sm.png"></ImageBrush>
+    <ImageBrush x:Key="skin_08_temp" ImageSource="../Skin/08/sm.png"></ImageBrush>
+    <ImageBrush x:Key="skin_09_temp" ImageSource="../Skin/09/sm.png"></ImageBrush>
+    <ImageBrush x:Key="skin_10_temp" ImageSource="../Skin/10/sm.png"></ImageBrush>
+    <ImageBrush x:Key="skin_11_temp" ImageSource="../Skin/11/sm.png"></ImageBrush>
+    <ImageBrush x:Key="skin_12_temp" ImageSource="../Skin/12/sm.png"></ImageBrush>
+   
+</ResourceDictionary>

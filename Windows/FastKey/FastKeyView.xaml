@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="FishWork.Windows.FastKey.FastKeyView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FishWork.Windows.FastKey"
+             mc:Ignorable="d" 
+             d:DesignHeight="46.226" d:DesignWidth="311.321">
+    <Border Background="White" BorderBrush="#ECECEC" BorderThickness="0" CornerRadius="3">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <CheckBox Name="checkbox" Margin="10,0,0,0" VerticalAlignment="Center"></CheckBox>
+            <Border Name="borderKey" MouseUp="borderKey_MouseUp" Margin="5,0,0,0" Height="20" CornerRadius="1" BorderBrush="#CECECE" BorderThickness="1" Background="#FFFFFF">
+                <TextBlock Name="lbKey" Text="Ctrl+V" Width="130" TextAlignment="Center" FontSize="11" VerticalAlignment="Center"></TextBlock>
+                
+            </Border>
+            <TextBlock Name="lbText" VerticalAlignment="Center" Margin="10,0,0,0" Foreground="#666666">按键说明</TextBlock>
+            <TextBox Name="txtInput" GotFocus="txtInput_GotFocus" InputMethod.IsInputMethodEnabled="False" LostFocus="txtInput_LostFocus" Width="1" Height="0" BorderThickness="0"  Background="Transparent" PreviewKeyDown="txtInput_PreviewKeyDown" PreviewKeyUp="txtInput_PreviewKeyUp"></TextBox>
+        </StackPanel>
+    </Border>
+</UserControl>

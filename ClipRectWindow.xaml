@@ -1,0 +1,19 @@
+﻿<Window x:Class="FishWork.ClipRectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FishWork"
+        mc:Ignorable="d"
+        Title="ClipRectWindow" Height="450" Width="800"
+         Background="#00000000"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Loaded="Window_Loaded"
+        >
+    <Canvas Name="cvs" Background="#64000000">
+        <Border Name="border" BorderBrush="#0094FF" BorderThickness="1" Width="0" Height="0" Background="#320094FF">
+            
+        </Border>
+    </Canvas>
+</Window>

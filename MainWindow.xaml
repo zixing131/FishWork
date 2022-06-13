@@ -1,0 +1,56 @@
+﻿<Window x:Class="FishWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FishWork"
+        mc:Ignorable="d"
+        Title="FishWork" Height="550" Width="507"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Loaded="Window_Loaded"
+        Background="Transparent"
+        Topmost="True"
+        WindowStartupLocation="CenterScreen"
+        xmlns:ui="clr-namespace:NetDict.UI.UIControls"
+        xmlns:fui="clr-namespace:FishWork.UIControls"
+       
+        >
+    <Border Name="border" Margin="10" Background="#FFFFFF" BorderBrush="#ececec" BorderThickness="0" CornerRadius="5" Tag="Move">
+        <Border.Effect>
+            <DropShadowEffect Direction="100" ShadowDepth="0.4" BlurRadius="10"></DropShadowEffect>
+        </Border.Effect>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Tag="Move">
+                    <ui:SVGImage Tag="Move" Margin="10,0,0,0" Width="15" Fill="#0f6fe7" Height="15" Data="M704 512C810.666667 512 896 426.666667 896 320S810.666667 128 704 128 512 213.333333 512 320C512 213.333333 426.666667 128 320 128S128 213.333333 128 320 213.333333 512 320 512C213.333333 512 128 597.333333 128 704c0 21.333333 4.266667 42.666667 12.8 64l12.8 25.6v4.266667c4.266667 8.533333 8.533333 17.066667 12.8 21.333333v4.266667c8.533333 12.8 21.333333 25.6 34.133333 34.133333 4.266667 0 4.266667 4.266667 4.266667 4.266667 4.266667 4.266667 8.533333 4.266667 12.8 8.533333 4.266667 4.266667 8.533333 4.266667 17.066667 8.533333 4.266667 0 8.533333 4.266667 12.8 4.266667 8.533333 4.266667 12.8 4.266667 21.333333 8.533333 4.266667 0 8.533333 0 12.8 4.266667h38.4c12.8 0 25.6 0 34.133333-4.266667 4.266667 0 8.533333 0 12.8-4.266666 8.533333 0 12.8-4.266667 21.333334-8.533334 4.266667 0 8.533333-4.266667 12.8-4.266666 4.266667-4.266667 12.8-4.266667 17.066666-8.533334 4.266667-4.266667 8.533333-4.266667 12.8-8.533333 4.266667 0 4.266667-4.266667 4.266667-4.266667 12.8-8.533333 25.6-21.333333 34.133333-34.133333v-4.266667c4.266667-8.533333 8.533333-12.8 12.8-21.333333v-4.266667l12.8-25.6c8.533333-21.333333 12.8-42.666667 12.8-64 0 21.333333 4.266667 42.666667 12.8 64l12.8 25.6v4.266667c4.266667 8.533333 8.533333 17.066667 12.8 21.333333v4.266667c8.533333 12.8 21.333333 25.6 34.133334 34.133333 4.266667 0 4.266667 4.266667 4.266666 4.266667 4.266667 4.266667 8.533333 4.266667 12.8 8.533333 4.266667 4.266667 8.533333 4.266667 17.066667 8.533334 4.266667 0 8.533333 4.266667 12.8 4.266666 8.533333 4.266667 12.8 4.266667 21.333333 8.533334 4.266667 0 8.533333 0 12.8 4.266666 12.8 0 21.333333 4.266667 34.133334 4.266667s25.6 0 34.133333-4.266667c4.266667 0 8.533333 0 12.8-4.266666 8.533333 0 12.8-4.266667 21.333333-8.533334 4.266667 0 8.533333-4.266667 12.8-4.266666 4.266667-4.266667 12.8-4.266667 17.066667-8.533334s8.533333-4.266667 12.8-8.533333c4.266667 0 4.266667-4.266667 4.266667-4.266667 12.8-8.533333 25.6-21.333333 34.133333-34.133333v-4.266667c4.266667-8.533333 8.533333-12.8 12.8-21.333333v-4.266667l12.8-25.6c8.533333-21.333333 12.8-42.666667 12.8-64C896 597.333333 810.666667 512 704 512zM554.666667 320C554.666667 238.933333 622.933333 170.666667 704 170.666667S853.333333 238.933333 853.333333 320 785.066667 469.333333 704 469.333333H554.666667V320z m-384 0C170.666667 238.933333 238.933333 170.666667 320 170.666667S469.333333 238.933333 469.333333 320V469.333333h-149.333333C238.933333 469.333333 170.666667 401.066667 170.666667 320zM187.733333 768c-12.8-21.333333-17.066667-42.666667-17.066666-64C170.666667 622.933333 238.933333 554.666667 320 554.666667H469.333333v149.333333c0 21.333333-4.266667 42.666667-17.066666 64H187.733333z m366.933334-64V554.666667h149.333333c81.066667 0 149.333333 68.266667 149.333333 149.333333 0 21.333333-4.266667 42.666667-17.066666 64h-268.8c-8.533333-21.333333-12.8-42.666667-12.8-64z"></ui:SVGImage>
+                    <TextBlock Margin="5,0,0,0" Foreground="#0f6fe7" Tag="Move">WorkTools - by Enki2022</TextBlock>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" >
+                    <Border Name="btnMiniState" MouseUp="btnMiniState_MouseUp" ToolTip="最小化" Margin="0,0,0,0" Width="30" Background="White" Style="{StaticResource m_elem_focus}">
+                        <ui:SVGImage Width="13" Height="4"  Fill="#CECECE" Data="M78.633918 396.690788l858.20393 0 0 158.309562-858.20393 0 0-158.309562Z"></ui:SVGImage>
+                    </Border>
+                    <Border Name="btnExit" MouseUp="btnExit_MouseUp" ToolTip="退出" Width="30" Margin="0,0,5,0" Background="White" Style="{StaticResource m_elem_focus}">
+                        <ui:SVGImage Width="13" Height="13"  Fill="#CECECE" Data="M671.830688 511.699001l319.059377-319.059377c43.945914-43.945914 43.945914-115.583774 0-159.529688-43.945914-43.945914-115.583774-43.945914-159.529688 0l-319.059377 319.059377-319.059377-319.059377c-43.945914-43.945914-115.583774-43.945914-159.529688 0-43.945914 43.945914-43.945914 115.583774 0 159.529688l319.059377 319.059377-319.059377 319.059377c-43.945914 43.945914-43.945914 115.583774 0 159.529688 43.945914 43.945914 115.583774 43.945914 159.529688 0l319.059377-319.059377 319.059377 319.059377c43.945914 43.945914 115.583774 43.945914 159.529688 0 43.945914-43.945914 43.945914-115.583774 0-159.529688L671.830688 511.699001z"></ui:SVGImage>
+                    </Border>
+                </StackPanel>
+            </Grid>
+
+            <!--页签-->
+            <Border  Grid.Row="1" BorderBrush="#ECECEC" BorderThickness="0,0,0,1">
+                <StackPanel Name="stackTab" VerticalAlignment="Center" Orientation="Horizontal">
+                    <fui:HeadMenu Margin="10,0,0,0" Text="程序" Selected="False" Data="APP"></fui:HeadMenu>
+                    <fui:HeadMenu Margin="10,0,0,0" Text="设置" Selected="False" Data="Set"></fui:HeadMenu>
+                </StackPanel>
+            </Border>
+            <Frame Grid.Row="2" Name="frameApp" Source="./Pages/Process/ProcessPage.xaml" Visibility="Visible" NavigationUIVisibility="Hidden" Padding="10,0,10,0"></Frame>
+            <Frame Grid.Row="2" Name="frameSetting" Source="./Pages/Setting/SettingPage.xaml" Visibility="Visible" NavigationUIVisibility="Hidden" Padding="10,0,10,0"></Frame>
+        </Grid>
+    </Border>
+</Window>

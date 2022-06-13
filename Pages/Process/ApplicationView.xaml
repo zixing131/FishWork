@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="FishWork.Pages.Process.ApplicationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FishWork.Pages.Process"
+             mc:Ignorable="d" 
+             d:DesignHeight="81.784" d:DesignWidth="587.126"
+             xmlns:ui="clr-namespace:NetDict.UI.UIControls"
+             xmlns:fui="clr-namespace:FishWork.UIControls"
+             >
+
+    <Border Padding="10" Background="White" BorderBrush="#ECECEC" BorderThickness="1" CornerRadius="2">
+        <Grid>
+            <StackPanel>
+                <TextBlock Name="lbTitle" FontSize="16">标题</TextBlock>
+                <StackPanel Orientation="Horizontal"  Margin="0,5,0,0">
+                    <TextBlock>应用状态：</TextBlock>
+                    <TextBlock Name="lbRunStatus">未运行</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#666666">1%</TextBlock>
+                    <Slider Name="alphaSilder" ValueChanged="alphaSilder_ValueChanged" Minimum="1" Maximum="255" VerticalAlignment="Center" Width="130" Template="{StaticResource SliderControlTemplate1}"></Slider>
+                    <TextBlock VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#666666">100%</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <ui:SVGImage x:Name="ic_mark" MouseUp="ic_mark_MouseUp" Margin="0,0,10,0"  ToolTip="遮罩"  Background="#01000000" Style="{StaticResource m_elem_focus}" Width="15" Height="15" Data="M717.087447 823.419705c-8.396227 0-15.192004 6.809079-15.192004 15.205307l0 91.149976L94.226546 929.774989 94.226546 322.091766l91.149976 0c8.397251 0 15.192004-6.786567 15.192004-15.183817 0-8.389064-6.794753-15.192004-15.192004-15.192004L63.843562 291.715945l0 668.443052 668.435888 0L732.279451 838.626036C732.279451 830.229808 725.484697 823.419705 717.087447 823.419705zM291.718503 63.83998l0 668.444075 668.436912 0L960.155415 63.83998 291.718503 63.83998zM929.77243 701.884698l-607.66992 0L322.10251 94.222965l607.66992 0L929.77243 701.884698z"></ui:SVGImage>
+                <ui:SVGImage x:Name="ic_remove" MouseUp="ic_remove_MouseUp" ToolTip="移除"  Background="#01000000" Style="{StaticResource m_elem_focus}" Width="15" Height="15" Data="M202.666667 256h-42.666667a32 32 0 0 1 0-64h704a32 32 0 0 1 0 64H266.666667v565.333333a53.333333 53.333333 0 0 0 53.333333 53.333334h384a53.333333 53.333333 0 0 0 53.333333-53.333334V352a32 32 0 0 1 64 0v469.333333c0 64.8-52.533333 117.333333-117.333333 117.333334H320c-64.8 0-117.333333-52.533333-117.333333-117.333334V256z m224-106.666667a32 32 0 0 1 0-64h170.666666a32 32 0 0 1 0 64H426.666667z m-32 288a32 32 0 0 1 64 0v256a32 32 0 0 1-64 0V437.333333z m170.666666 0a32 32 0 0 1 64 0v256a32 32 0 0 1-64 0V437.333333z"></ui:SVGImage>
+            </StackPanel>
+           
+        </Grid>
+    </Border>
+</UserControl>

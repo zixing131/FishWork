@@ -1,0 +1,27 @@
+﻿<Page x:Class="FishWork.Pages.Setting.SettingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FishWork.Pages.Setting"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="SettingPage"
+      Background="White"
+      FontSize="16"
+      >
+
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock>Shift+V 开启/隐藏遮罩</TextBlock>
+            <TextBlock>Shift+鼠标滚轮 调整遮罩宽度</TextBlock>
+            <TextBlock>Ctrl+鼠标滚轮 调整遮罩高度</TextBlock>
+            <TextBlock>Alt+鼠标滚轮 调整遮罩圆角度</TextBlock>
+            <TextBlock>F1键鼠标滚轮 调整遮罩透明度</TextBlock>
+            <TextBlock>Shift+1键 遮罩窗口透明度100%</TextBlock>
+            <TextBlock>Shift+2键 遮罩窗口透明度50%</TextBlock>
+            <TextBlock>Shift+3键 遮罩窗口透明度10%</TextBlock>
+            <TextBlock Margin="0,20,0,0">QQ群：764760782  未完待续。。。</TextBlock>
+        </StackPanel>
+    </Grid>
+</Page>

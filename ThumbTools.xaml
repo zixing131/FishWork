@@ -1,0 +1,31 @@
+﻿<Window x:Class="FishWork.ThumbTools"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FishWork"
+        mc:Ignorable="d"
+        Title="ThumbTools" Height="32" Width="471.081"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="#64000000"
+        xmlns:ui="clr-namespace:NetDict.UI.UIControls"
+        ShowInTaskbar="False"
+        Topmost="True"
+        MouseEnter="Window_MouseEnter"
+        MouseLeave="Window_MouseLeave"
+        Loaded="Window_Loaded"
+        >
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,20,0">
+            <TextBlock Name="lb1" VerticalAlignment="Center" Foreground="White">透明度</TextBlock>
+            <StackPanel Orientation="Horizontal" Margin="10,0,20,0">
+                <TextBlock VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#FFFFFF">1%</TextBlock>
+                <Slider Name="slider_opacity" ValueChanged="slider_opacity_ValueChanged"  Value="100" Minimum="1" Maximum="100" VerticalAlignment="Center" Width="100" Template="{StaticResource SliderControlTemplate1}"></Slider>
+                <TextBlock VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#FFFFFF">100%</TextBlock>
+            </StackPanel>
+            <TextBlock Name="lbClose" MouseUp="lbClose_MouseUp" VerticalAlignment="Center" Foreground="White" Background="#01000000" Style="{StaticResource m_elem_focus}">关闭窗口</TextBlock>
+        </StackPanel>
+        <ui:SVGImage x:Name="bntResize" Cursor="ScrollSE" Width="10" Height="10" Fill="White" Margin="0,0,4,4" HorizontalAlignment="Right" VerticalAlignment="Bottom" Data="M912.426667 88.533333a42.666667 42.666667 0 0 0-46.506667 9.173334l-768 768a42.666667 42.666667 0 0 0-9.173333 46.506666C95.146667 928.213333 110.72 938.666667 128 938.666667h768c23.466667 0 42.666667-19.2 42.666667-42.666667V128c0-17.28-10.453333-32.853333-26.24-39.466667z"></ui:SVGImage>
+    </Grid>
+</Window>

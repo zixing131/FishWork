@@ -1,0 +1,48 @@
+﻿<Window x:Class="FishWork.DeskTopComponenet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FishWork"
+        mc:Ignorable="d"
+        Title="DeskTopComponenet" Height="35" Width="236.792"
+        ShowInTaskbar="False"
+        Topmost="True"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        xmlns:ui="clr-namespace:NetDict.UI.UIControls"
+        xmlns:fui="clr-namespace:FishWork.UIControls"
+        Loaded="Window_Loaded"
+        >
+    <Window.ContextMenu>
+        <ContextMenu x:Name="contextMenu" Opened="contextMenu_Opened">
+            <MenuItem Name="menu_set_alpha" Header="更改预置透明度" Click="menu_Click"></MenuItem>
+            <MenuItem Name="menu_fastkey" Header="快捷键设置" Click="menu_Click"></MenuItem>
+            <MenuItem Name="menu_mask" Header="遮罩设置" Click="menu_Click"></MenuItem>
+            <MenuItem Name="menu_bootrun" Header="开机自动运行" Click="menu_Click">
+                <MenuItem.Icon>
+                    <ui:SVGImage x:Name="ic_bootrun" Fill="White" Width="13" Height="10" Data="M378.88 844.8 25.6 491.52 97.28 417.28 378.88 698.88 926.72 153.6 998.4 225.28Z"></ui:SVGImage>
+                </MenuItem.Icon>
+            </MenuItem>
+            <MenuItem Name="menu_about" Header="关于软件" Click="menu_Click"></MenuItem>
+            <MenuItem Name="menu_exit" Header="退出软件" Click="menu_Click"></MenuItem>
+        </ContextMenu>
+    </Window.ContextMenu>
+    <Border Background="#64000000" CornerRadius="3" Tag="Move">
+        <Grid>
+            <StackPanel Orientation="Horizontal">
+                <ui:SVGImage x:Name="ic_point_window" Background="#01000000"  Style="{StaticResource m_elem_focus}" ToolTip="定位窗口" Margin="10,0,0,0" Fill="#FFFFFF" Width="18" Height="18" SvgFile="pack://application:,,,/Svg/ic_point_1.svg" ></ui:SVGImage>
+                <ui:SVGImage x:Name="ic_mask_enable" MouseUp="ic_mask_enable_MouseUp" Background="#01000000"  Style="{StaticResource m_elem_focus}"  Width="18" ToolTip="开启关闭遮罩" Margin="10,0,0,0" Fill="#FFFFFF" Height="18" SvgFile="pack://application:,,,/Svg/ic_zhezao.svg"></ui:SVGImage>
+                <ui:SVGImage x:Name="ic_back_view" MouseUp="ic_back_view_MouseUp"  Background="#01000000"  Style="{StaticResource m_elem_focus}"  Width="18" ToolTip="截取小窗" Margin="10,0,0,0" Fill="#FFFFFF" Height="18" SvgFile="pack://application:,,,/Svg/ic_cliprect.svg"></ui:SVGImage>
+                <StackPanel Name="stackOptions" Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,0,0" >
+                    <TextBlock Foreground="White" Margin="0,0,10,0" Background="#01000000" Style="{StaticResource m_elem_focus}" >100%</TextBlock>
+                    <TextBlock Foreground="White" Margin="0,0,10,0" Background="#01000000"  Style="{StaticResource m_elem_focus}" >50%</TextBlock>
+                    <TextBlock Foreground="White" Margin="0,0,10,0" Background="#01000000" Style="{StaticResource m_elem_focus}" >10%</TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <ui:SVGImage x:Name="ic_more_menu" MouseUp="ic_more_menu_MouseUp" Background="#01000000" Style="{StaticResource m_elem_focus}" Width="16" ToolTip="更多菜单" HorizontalAlignment="Right" Margin="0,0,10,0" Fill="#FFFFFF" Height="13" SvgFile="pack://application:,,,/Svg/ic_menu_more_3.svg"></ui:SVGImage>
+        </Grid>
+    </Border>
+</Window>

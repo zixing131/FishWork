@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="NetDict.UI.UIControls.SVGImage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:NetDict.UI.UIControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="20" d:DesignWidth="20">
+    <UserControl.RenderTransform>
+        <TransformGroup>
+            <ScaleTransform x:Name="scaleTransform" ScaleX="1" ScaleY="1"></ScaleTransform>
+        </TransformGroup>
+    </UserControl.RenderTransform>
+    <Path Name="path" Stroke="Black" StrokeThickness="0" 
+		   Stretch="Fill"
+           Data="M648.272501 0H384.768171L0.000682 1024h242.952698l77.34577-255.829447h382.038641l78.710193 255.829447h244.317122zM369.418404 599.408394l120.069287-336.330446a367.541639 367.541639 0 0 0 18.334444-86.55563h6.139906a380.759494 380.759494 0 0 0 16.287808 89.284477l119.387076 333.686876H369.418404z" 
+           Fill="Gray"
+           >
+
+    </Path>
+
+</UserControl>

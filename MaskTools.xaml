@@ -1,0 +1,25 @@
+﻿<Window x:Class="FishWork.MaskTools"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FishWork"
+        mc:Ignorable="d"
+        Title="MaskTools" Height="32" Width="471.081"
+        xmlns:ui="clr-namespace:NetDict.UI.UIControls"
+        ShowInTaskbar="False"
+        Topmost="True"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="#64000000"
+        Loaded="Window_Loaded"
+        >
+    <Grid>
+        <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+            <ui:UIButton x:Name="bntFinish" OnClick="bntFinish_OnClick" Text="完成" Width="70" Height="23" CornerRadius="3" HorizontalAlignment="Right" Margin="10,0,0,0"></ui:UIButton>
+
+        </StackPanel>
+       
+        <ui:SVGImage x:Name="bntResize" Cursor="ScrollSE" Width="10" Height="10" Fill="White" Margin="0,0,4,4" HorizontalAlignment="Right" VerticalAlignment="Bottom" Data="M912.426667 88.533333a42.666667 42.666667 0 0 0-46.506667 9.173334l-768 768a42.666667 42.666667 0 0 0-9.173333 46.506666C95.146667 928.213333 110.72 938.666667 128 938.666667h768c23.466667 0 42.666667-19.2 42.666667-42.666667V128c0-17.28-10.453333-32.853333-26.24-39.466667z"></ui:SVGImage>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="FishWork.UIControls.HeadMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FishWork.UIControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="76.415" d:DesignWidth="89.623">
+    <Border Style="{StaticResource m_elem_focus}">
+        <Grid>
+            <TextBlock Name="lbText" TextAlignment="Center" VerticalAlignment="Center" FontSize="15" Foreground="#666666">页签名称</TextBlock>
+        </Grid>
+    </Border>
+</UserControl>
